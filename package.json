@@ -18,7 +18,8 @@
     "check": "npm run typecheck && npm run lint && npm run test",
     "copy-check": "node scripts/copy-check.mjs",
     "mockups": "node scripts/render-mockups.mjs",
-    "live-check": "node scripts/live-check.mjs"
+    "live-check": "node scripts/live-check.mjs",
+    "icons": "node scripts/icons.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",

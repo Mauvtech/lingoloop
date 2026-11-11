@@ -1,0 +1,10 @@
+.banner {
+  position: fixed; left: 50%; bottom: calc(96px + env(safe-area-inset-bottom)); z-index: 40;
+  transform: translateX(-50%); width: calc(100% - 2 * var(--gutter)); max-width: calc(var(--app-max) - 2 * var(--gutter));
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;
+  padding: 10px 12px 10px 16px; border-radius: var(--r-card); background: var(--sea-800); color: var(--white);
+  font-size: 14px; font-weight: 700;
+}
+.actions { display: flex; gap: 4px; }
+.update { min-height: 44px; padding: 0 14px; border: none; border-radius: 22px; background: var(--sun-500); color: var(--sea-800); font-weight: 900; }
+.later { min-height: 44px; padding: 0 12px; border: none; background: none; color: var(--white); font-weight: 700; }

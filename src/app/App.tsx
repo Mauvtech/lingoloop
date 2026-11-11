@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { UpdateBanner } from '../components/UpdateBanner';
 import { useApp } from '../store/appStore';
 import BlockageDetail from '../screens/BlockageDetail';
 import Blockages from '../screens/Blockages';
@@ -51,6 +52,7 @@ export function App() {
           </p>
         )}
         {ready && <AppRoutes />}
+        <UpdateBanner />
       </div>
     </BrowserRouter>
   );
