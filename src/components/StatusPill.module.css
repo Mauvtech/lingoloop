@@ -1,0 +1,13 @@
+.pill {
+  display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 10px;
+  border-radius: 13px; font-size: 13px; font-weight: 900; white-space: nowrap;
+}
+.dot { width: 8px; height: 8px; border-radius: 4px; box-sizing: border-box; }
+.recurrent { background: var(--sun-100); color: var(--sun-700); }
+.recurrent .dot { background: var(--sun-600); }
+.to_work { background: var(--sea-100); color: var(--info-700); }
+.to_work .dot { background: var(--sea-600); }
+.to_watch { background: var(--neutral-100); color: var(--neutral-700); }
+.to_watch .dot { border: 2px solid var(--neutral-700); }
+.resolved { background: var(--ok-100); color: var(--ok-700); }
+.resolved .dot { background: var(--ok-700); }

@@ -16,3 +16,12 @@
   display: flex;
   flex-direction: column;
 }
+.banner {
+  margin: 0;
+  padding: calc(6px + env(safe-area-inset-top)) var(--gutter) 6px;
+  background: var(--sea-800);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}

@@ -10,7 +10,7 @@ const SCRIPTS: Record<CharacterId, Record<Lang, Script>> = {
       intro: "Hi, I'm Nova, a space explorer just back from a long mission. What did you do today on Earth?",
       lines: [
         'That sounds nice. On the station, every day looks the same. What do you like most about your city?',
-        'Interesting! If you could visit a new planet, what would you explore first?',
+        'Nice! If you could fly into space, what would you explore first?',
         'I love that idea. What did you do last weekend?',
         'Ha, we never do that in space. What food would you bring on a mission?',
         'Good choice! What is the most beautiful place you have ever seen?',

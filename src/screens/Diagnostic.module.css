@@ -1,0 +1,15 @@
+.banner { position: relative; flex: none; height: 120px; border-radius: 24px; overflow: hidden; background: var(--sea-300); }
+.badge { position: absolute; right: 12px; top: 12px; display: flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 15px; background: var(--white); font-size: 13px; font-weight: 700; }
+.results { display: flex; flex-direction: column; gap: 16px; }
+.card { display: flex; flex-direction: column; gap: 12px; padding: 18px; }
+.cardHead { display: flex; align-items: center; gap: 12px; }
+.cardTitles { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.eyebrow { font-size: 12px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sun-700); }
+.cardTitle { font-weight: 900; font-size: 20px; line-height: 1.2; }
+.note { font-size: 14px; line-height: 1.4; color: var(--ink-muted); }
+.skeleton { display: flex; flex-direction: column; gap: 10px; padding: 18px; }
+.skeleton span { display: block; height: 14px; border-radius: 7px; background: var(--sea-100); animation: shimmer 1.2s infinite ease-in-out; }
+.skeleton span:first-child { width: 45%; height: 18px; }
+.skeleton span:nth-child(2) { width: 90%; }
+.skeleton span:nth-child(3) { width: 70%; }
+@keyframes shimmer { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }

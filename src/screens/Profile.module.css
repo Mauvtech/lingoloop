@@ -1,0 +1,4 @@
+.head { display: flex; align-items: center; gap: 16px; }
+.section { display: flex; flex-direction: column; gap: 10px; }
+.label { padding-left: 4px; }
+.soon { font-size: 14px; color: var(--ink-muted); }

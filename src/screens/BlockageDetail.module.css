@@ -1,0 +1,7 @@
+.head { display: flex; align-items: center; gap: 14px; }
+.icon { flex: none; width: 60px; height: 60px; border-radius: 30px; display: flex; align-items: center; justify-content: center; }
+.titles { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
+.section { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border-radius: var(--r-row); }
+.exHead { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.evoHead { display: flex; flex-direction: column; gap: 2px; }
+.exWho { font-size: 13px; color: var(--ink-muted); }

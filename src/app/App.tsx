@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { useApp } from '../store/appStore';
 import BlockageDetail from '../screens/BlockageDetail';
 import Blockages from '../screens/Blockages';
 import Conversation from '../screens/Conversation';
@@ -33,10 +35,22 @@ export function AppRoutes() {
 }
 
 export function App() {
+  const ready = useApp((s) => s.ready);
+  const persistent = useApp((s) => s.persistent);
+  const init = useApp((s) => s.init);
+  useEffect(() => {
+    void init();
+  }, [init]);
+
   return (
     <BrowserRouter>
-      <div className={styles.app}>
-        <AppRoutes />
+      <div className={styles.app} data-ready={ready}>
+        {!persistent && (
+          <p role="status" className={styles.banner}>
+            Tes données ne seront pas conservées
+          </p>
+        )}
+        {ready && <AppRoutes />}
       </div>
     </BrowserRouter>
   );

@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { isResumable } from '../domain/conversation';
 import { buildDemoConversations, isDemoRequested } from '../domain/demo';
 import { DEFAULT_SETTINGS, type Conversation, type Settings } from '../domain/types';
 import { openRepo, type Repo } from '../services/db';
@@ -53,7 +54,14 @@ export const useApp = create<AppState>((set, get) => ({
         const s = await repo.getSettings();
         await repo.saveSettings({ ...s, lang: 'en' });
       }
-      const [settings, conversations] = await Promise.all([repo.getSettings(), repo.listConversations()]);
+      const [settings, all] = await Promise.all([repo.getSettings(), repo.listConversations()]);
+      // Une conversation interrompue non reprenable est supprimée sans bruit ; une seule active à la fois.
+      const now = Date.now();
+      const actives = all.filter((c) => c.state === 'active').sort((a, b) => b.lastSavedAt - a.lastSavedAt);
+      const keep = actives[0] && isResumable(actives[0], now) ? actives[0].id : null;
+      const stale = actives.filter((c) => c.id !== keep);
+      await Promise.all(stale.map((c) => repo?.deleteConversation(c.id)));
+      const conversations = all.filter((c) => !stale.includes(c));
       set({ ready: true, persistent: repo.persistent, settings, conversations });
     })();
     return initPromise;

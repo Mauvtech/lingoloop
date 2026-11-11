@@ -22,7 +22,8 @@ export interface Deps {
 
 let defaultDeps: Deps | null = null;
 export function getDefaultDeps(): Deps {
-  defaultDeps ??= { llm: llmFromEnv(), limiter: createRateLimiter(30, 60_000), timeoutMs: 20_000 };
+  const limit = Number(process.env.LINGOLOOP_RATE_LIMIT) || 30;
+  defaultDeps ??= { llm: llmFromEnv(), limiter: createRateLimiter(limit, 60_000), timeoutMs: 20_000 };
   return defaultDeps;
 }
 

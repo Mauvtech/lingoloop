@@ -58,7 +58,7 @@ export function buildDemoConversations(now: number): Conversation[] {
     ]),
     conv('demo-c4', 'nova', c4, 300, 290, turns('nova', c4, [
       ["Hi, I'm Nova, a space explorer just back from a long mission. What did you do today on Earth?", 'Yesterday I go to the museum.'],
-      ['Interesting! If you could visit a new planet, what would you explore first?', 'I would explore the… the big holes, the mountains with fire.'],
+      ['Nice! If you could fly into space, what would you explore first?', 'I would explore the… the big holes, the mountains with fire.'],
     ]), [
       { key: 'past_tense', observation: 'Tu hésites quand tu racontes quelque chose au passé.', said: 'Yesterday I go to the museum.', corrected: 'Yesterday I went to the museum.', occurrences: 1, severity: 3 },
       { key: 'vocabulary', observation: 'Tu as cherché tes mots pour décrire un lieu.', occurrences: 1, severity: 2 },
