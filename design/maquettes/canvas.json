@@ -1,0 +1,116 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "BlocageDetail.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 40,
+      "title": "07 — Détail d'un blocage",
+      "w": 390,
+      "x": 940,
+      "y": 1264
+    },
+    "Blocages.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 40,
+      "title": "06 — Blocages",
+      "w": 390,
+      "x": 470,
+      "y": 1264
+    },
+    "Conversation.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 40,
+      "title": "03 — Conversation",
+      "w": 390,
+      "x": 940,
+      "y": 0
+    },
+    "Diagnostic.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 40,
+      "title": "04 — Diagnostic",
+      "w": 390,
+      "x": 1410,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 40,
+      "title": "01 — Accueil",
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "Profil.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 40,
+      "title": "08 — Profil / réglages",
+      "w": 390,
+      "x": 1410,
+      "y": 1264
+    },
+    "Progression.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 40,
+      "title": "05 — Progression",
+      "w": 390,
+      "x": 0,
+      "y": 1264
+    },
+    "Recherche.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 40,
+      "title": "02 — Recherche",
+      "w": 390,
+      "x": 470,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-09T19:40:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "t-parcours": {
+      "kind": "title1",
+      "maxW": 1800,
+      "text": "Parcours de conversation",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "t-suivi": {
+      "kind": "title1",
+      "maxW": 1800,
+      "text": "Suivi et profil",
+      "w": 240,
+      "x": 0,
+      "y": 1004
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Recherche.dc.html",
+    "Conversation.dc.html",
+    "Diagnostic.dc.html",
+    "Progression.dc.html",
+    "Blocages.dc.html",
+    "BlocageDetail.dc.html",
+    "Profil.dc.html"
+  ],
+  "pages": [],
+  "title": "LingoLoop — Maquettes MVP"
+}

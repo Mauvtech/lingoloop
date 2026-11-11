@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Recherche d'un personnage</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFFFFF;text-decoration:none}a:hover{color:#FFFFFF}
+button{font:inherit;cursor:pointer}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #A9D0DF; color: #1F4455; font-family: Lato, system-ui, sans-serif">
+<div style="flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: space-between">
+<header style="display: flex; align-items: center; justify-content: space-between; padding: 56px 24px 0">
+<a href="Main.dc.html" aria-label="Annuler la recherche" style="width: 44px; height: 44px; border-radius: 22px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; color: #1F4455">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</a>
+<span style="display: flex; align-items: center; height: 36px; padding: 0 14px; border-radius: 18px; background: #FFFFFF; font-size: 14px; font-weight: 700">Anglais · 5 min</span>
+</header>
+<svg width="390" height="320" viewBox="0 0 390 320" aria-hidden="true" style="display: block">
+<circle cx="195" cy="210" r="170" fill="#B7D9E6"></circle>
+<circle cx="195" cy="210" r="124" fill="#C6E2EC"></circle>
+<circle cx="195" cy="210" r="78" fill="#D8ECF3"></circle>
+<circle cx="318" cy="60" r="22" fill="#FFFFFF"></circle>
+<path d="M50 78q7-7 13 0q7-7 13 0" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"></path>
+<path d="M84 112q5-5 9 0q5-5 9 0" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"></path>
+<path d="M131 276h128l-12 44h-104z" fill="#F2A541"></path>
+<rect x="193" y="120" width="5" height="156" fill="#1F4455"></rect>
+<path d="M201 128l66 138h-66z" fill="#FFFFFF"></path>
+<path d="M190 156v110h-52z" fill="#EAF4F8"></path>
+<text x="226" y="252" text-anchor="middle" font-family="Lato, sans-serif" font-weight="900" font-size="52" fill="#1F4455">?</text>
+<path d="M198 120h22l-6 6 6 6h-22z" fill="#F2A541"></path>
+</svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 28px; padding: 28px 24px 40px; background: #2B6A84; color: #FFFFFF">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center">
+<h1 style="margin: 0; font-weight: 900; font-size: 26px; line-height: 1.15">Recherche d'un personnage</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #EAF4F8">Un personnage va te rejoindre…</p>
+<div aria-hidden="true" style="display: flex; gap: 8px; padding-top: 6px">
+<span style="width: 9px; height: 9px; border-radius: 5px; background: #F2A541"></span>
+<span style="width: 9px; height: 9px; border-radius: 5px; background: #A9D0DF"></span>
+<span style="width: 9px; height: 9px; border-radius: 5px; background: #4E88A0"></span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<a href="Conversation.dc.html" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 28px; background: #F2A541; color: #1F4455; font-size: 17px; font-weight: 900">Démarrer la conversation</a>
+<a href="Main.dc.html" style="display: flex; align-items: center; justify-content: center; height: 48px; border-radius: 24px; font-size: 16px; font-weight: 700">Annuler</a>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
