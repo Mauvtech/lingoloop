@@ -1,0 +1,24 @@
+.bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  min-height: var(--tabbar-h);
+  padding: 8px 16px calc(24px + env(safe-area-inset-bottom));
+  background: var(--white);
+  border-top: 1px solid var(--sea-200);
+}
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-height: var(--tap);
+  color: var(--ink-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+.tab:hover { color: var(--sea-800); }
+.active { color: var(--sea-800); font-weight: 900; }

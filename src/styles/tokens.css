@@ -1,0 +1,39 @@
+:root {
+  /* couleurs */
+  --sea-50: #EAF4F8;
+  --sea-100: #DCEDF3;
+  --sea-200: #CFE2EA;
+  --sea-300: #A9D0DF;
+  --sea-500: #4E88A0;
+  --sea-600: #2B6A84;
+  --sea-700: #2B5A6E;
+  --sea-800: #1F4455;
+  --on-dark-muted: #BFDCE7;
+  --ink-muted: #4A6B7A;
+  --white: #FFFFFF;
+  --sun-500: #F2A541;
+  --sun-100: #FDEFD6;
+  --sun-600: #C77A0A;
+  --sun-700: #8A5200;
+  --info-700: #1F5368;
+  --neutral-100: #E6EDF0;
+  --neutral-700: #3F5F6E;
+  --ok-100: #D9F0E6;
+  --ok-700: #1B6650;
+  --danger: #C8442E;
+  --sun-halo: rgba(242, 165, 65, 0.28);
+  --scrim: rgba(31, 68, 85, 0.45);
+  /* typo */
+  --font: 'Lato', system-ui, sans-serif;
+  /* rayons */
+  --r-card: 22px;
+  --r-row: 20px;
+  --r-pill: 28px;
+  --r-panel: 28px;
+  --r-input: 20px;
+  /* espacement */
+  --gutter: 24px;
+  --tap: 44px;
+  --tabbar-h: 84px;
+  --app-max: 430px;
+}
