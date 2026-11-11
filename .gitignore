@@ -8,3 +8,4 @@ test-results
 .env.local
 *.log
 dist-e2e
+dist-e2e-mock
