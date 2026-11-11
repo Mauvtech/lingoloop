@@ -52,5 +52,8 @@
     "vite-plugin-pwa": "^2.0.0",
     "vitest": "^5.1.0",
     "workbox-window": "^7.4.1"
+  },
+  "overrides": {
+    "playwright-core": "1.63.0"
   }
 }
