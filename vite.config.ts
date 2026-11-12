@@ -9,11 +9,15 @@ export default defineConfig(({ mode }) => {
   for (const key of ['ANTHROPIC_API_KEY', 'ANTHROPIC_MODEL']) {
     if (env[key] && !process.env[key]) process.env[key] = env[key];
   }
+  // LINGOLOOP_STATIC=1 : build autonome (chemins relatifs, sans service worker), à servir comme simple page.
+  const isStatic = process.env.LINGOLOOP_STATIC === '1';
   return {
+    base: isStatic ? './' : '/',
     plugins: [
       react(),
       apiPlugin(),
       VitePWA({
+        disable: isStatic,
         registerType: 'prompt',
         injectRegister: false,
         strategies: 'generateSW',

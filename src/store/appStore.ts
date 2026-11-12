@@ -49,7 +49,7 @@ export const useApp = create<AppState>((set, get) => ({
   init() {
     initPromise ??= (async () => {
       repo = await openRepo();
-      if (typeof location !== 'undefined' && isDemoRequested(location.search)) {
+      if (typeof location !== 'undefined' && (isDemoRequested(location.search) || isDemoRequested(location.hash.split('?')[1] ?? ''))) {
         await repo.replaceConversations(buildDemoConversations(Date.now()));
         const s = await repo.getSettings();
         await repo.saveSettings({ ...s, lang: 'en' });

@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+
+// Build statique (page hébergée sans repli SPA) : routage par le fragment d'URL.
+const Router = import.meta.env.VITE_STATIC === '1' ? HashRouter : BrowserRouter;
 import { UpdateBanner } from '../components/UpdateBanner';
 import { useApp } from '../store/appStore';
 import BlockageDetail from '../screens/BlockageDetail';
@@ -44,7 +47,7 @@ export function App() {
   }, [init]);
 
   return (
-    <BrowserRouter>
+    <Router>
       <div className={styles.app} data-ready={ready}>
         {!persistent && (
           <p role="status" className={styles.banner}>
@@ -54,6 +57,6 @@ export function App() {
         {ready && <AppRoutes />}
         <UpdateBanner />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }

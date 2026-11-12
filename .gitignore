@@ -11,3 +11,4 @@ dist-e2e
 dist-e2e-mock
 dev-dist
 artifacts/lighthouse/*.json
+dist-static
